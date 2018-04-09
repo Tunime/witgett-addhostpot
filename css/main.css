@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+*,ul,li,a{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    background: #ecf0f1;
+}
+.admin{
+    display: flex;
+    justify-content: center;
+}
+    .admin--edit{
+        width: 20%;
+        margin: 10px;
+        background: rgb(255, 255, 255);
+    }
+        .admin--edit--title{
+            text-align: center;
+            padding: 1em;
+        }
+    .admin--view{
+        width: 60%;
+        margin: 10px;
+        padding: 20px;
+        background: #ffffff;
+    }
+        .admin--view--img{
+            width: 100%;
+        }
+    .admin--edit--list{
+
+    }
+        .admin--edit--list--element{
+            padding: 1em;
+            margin: 0 0.7em 0.7em 0.7em;
+            background: #ecf0f1;
+        }
+            .admin--edit--list--element--subtitle{
+                font-weight: 400;
+            }
+    .admin--edit--btn{
+        margin: 1em 0 0.5em 0;
+        display: flex;
+        justify-content: space-around;
+    }
+        .admin--edit--btn--btnaction{
+            color: #fff;
+            padding: 0.8em 10%;
+            background: #3498db;
+            border-radius: 5px;
+            width: 100%;
+            text-align: center;
+            margin: 0 0.7em;
+        }
+        .admin--edit--btn--btnaction:hover{
+            color: #fff;
+            background: #2980b9;
+        }
+    .admin--edit--add{
+        margin: 0 0.7em 0.7em 0.7em;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+        .admin__input{
+            border: 1px solid #ced4da;
+            border-radius: .25rem;
+            padding: .375rem .75rem;
+            margin: 0 0 0.5em 0;
+            font-size: 0.9rem;
+        }
+
+#posts{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    background: #F9B326;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 200;
+    margin-left: -10px;
+    margin-top: -10px;
+    color: #424242;
+    text-align: center;
+    padding: 0.5em;
+}
+#posts:hover + .card{
+    display: block;
+}
+.card{
+    display: none;
+    background: #fff;
+    position: absolute;
+    width: 300px;
+    padding: 20px;
+    border: solid 2px #F9B326;
+    color: #424242;
+    font-size: 16px;
+    margin-left: -10px;
+    margin-top: -10px;
+}
+.card img{
+    width: 100%;
+}
+.p-5{
+    padding: 50px;
+}
+.bg-pru1{
+    background: rgb(129, 129, 129);
+}
+.bg-pru2{
+    background: rgb(201, 201, 201);
+}

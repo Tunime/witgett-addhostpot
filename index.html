@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Admin Solar</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <section class="admin">
+        <div id="foradd" class="admin--edit">
+            <h3 class="admin--edit--title">ADMIN-HOSTPOST</h3>
+            <li class="admin--edit--btn">
+                <a class="admin--edit--btn--btnaction" href="#">add hostpost</a>
+            </li>
+            <li class="admin--edit--btn">
+                <a class="admin--edit--btn--btnaction" href="#">edit</a>
+            </li>
+            <div id="forinputs"></div>
+            <li id="btnadd" class="admin--edit--add--btn" style="display: none;">
+                <a @click="addhostpot" class="admin--edit--add--btnaction" href="#">Save</a>
+            </li>
+        </div>
+        <div id="witget" class="admin--view">
+            <a id="witgetimg" @click="newhospot">
+                <img class="admin--view--img" src="https://respuestas.tips/wp-content/uploads/2015/04/sistema-solar-planetas.jpg" alt="">
+            </a>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
