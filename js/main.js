@@ -54,7 +54,7 @@ var ban=0, bann=0;
                     bann=1;
                     $("#btnadd").css("display", "flex");
                     $('#forinputs').append('<div id="alvarus" class="admin--edit--add"><input id="scaley" type="text" class="admin__input" value="'+event.clientY+'"><input id="scalex" type="text" class="admin__input" value="'+event.clientX+'"><input id="mstitle" type="text" class="admin__input" placeholder="Title"><input id="mssubtitle" type="text" class="admin__input" placeholder="Subtitle"><textarea id="msdescription" class="admin__input" id="exampleFormControlTextarea1" rows="3" placeholder="Descripcion"></textarea><input id="msurl" type="text" class="admin__input" placeholder="img URL"></div>');
-                    $('#witgetimg').append('<div id="posts" style="top:'+event.clientY+'px; left:'+event.clientX+'px;"></div>');
+                    $('#witgetimg').append('<div id="posts" style="top:'+event.clientY+'px; left:'+event.clientX+'px;">'+(ban+1)+'</div>');
                 }
                 
             }
